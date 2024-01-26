@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    
+  
+}
+.page-name{
+    font-family: 'Single Day', cursive;
+}
+
+.content h2{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 55px;
+}
+.content p:first-child{
+  
+    font-family: 'IBM Plex Mono', monospace;
+    font-size:40px;
+    
+
+}
+.content p:last-child{
+    font-family: 'Cute Font', sans-serif;
+    font-size:30px;
+}
+.navbar {
+    background-color: #f3f3f3;
+    padding: 10px 0;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-name {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.menu li a:hover {
+    color: goldenrod;
+}
+
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section-image-left {
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.section-image-right {
+    width: 40%;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.content-text {
+    overflow: hidden; /* Clear float */
+}
+
+.clear {
+    clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon:hover + .menu,
+    .menu:hover {
+        display: block;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .section-image-left,
+    .section-image-right {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
